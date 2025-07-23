@@ -1,0 +1,98 @@
+Create a modern, mobile-friendly website for a local web design service called PagePilot.
+
+Brand & Design:
+Use a clean, modern layout, but avoid blandness — incorporate soft textures, background shapes, icons, and subtle animations to give it personality.
+
+Use a green-themed color palette (greens, greys, and white) to feel friendly, natural, and local.
+
+Add hover effects, gentle motion (like fade-ins or slide-ups), and icons or illustrations to break up sections visually.
+
+Structure:
+If possible, make this a multi-page website with:
+
+Home
+
+About
+
+Pricing
+
+Contact
+If Replit cannot support multiple pages, combine it into a smooth-scrolling single page with clearly separated sections.
+
+Homepage:
+Hero headline:
+"Websites that take off — PagePilot helps local businesses get online fast."
+
+Short intro paragraph:
+“We design clean, affordable websites for local businesses — mobile-friendly, fast, and made to reflect your brand.”
+
+Visual: Add an illustration or icon-based image like a monitor or simple animation near the hero section.
+
+Instead of fake stats like "500+ websites", include this honest message:
+“Every site is handcrafted with care, tailored to each client — no templates, no shortcuts.”
+
+About Page / Section:
+Focus on the personal side:
+“We’re a local business, just like you. PagePilot was built to help independent businesses grow online without spending a fortune.”
+
+Quote from the creator:
+“I started PagePilot to help local businesses look professional online. Every site I make is handcrafted and made to feel personal.”
+
+Optional bullet list of what makes PagePilot different:
+
+Affordable flat pricing
+
+Fully mobile-friendly
+
+Built to reflect your business’s personality
+
+Friendly and easy communication
+
+Pricing Page / Section:
+Title: Simple Pricing
+3 options as cards or tiles, with icons and hover highlights:
+
+🔹 Basic – £150
+
+One-page website
+
+Mobile-friendly design
+
+Contact section
+
+Fast turnaround
+
+🔸 Standard – £200
+
+Up to 3 pages
+
+Everything in Basic
+
+Photo gallery or FAQ section
+
+Contact form
+
+🟢 Premium – £250
+
+Up to 5 pages
+
+Everything in Standard
+
+Priority support
+
+Custom sections (reviews, extra features, etc.)
+
+Contact Page / Section:
+Add a visible contact section with a placeholder email like hello@pagepilot.co.uk
+
+On Standard and Premium tiers, include a working contact form (e.g. using Formspree or Getform).
+
+Footer:
+Simple footer with:
+
+“© PagePilot”
+
+Social icons (if possible)
+
+Friendly message like:
+“Each website is built with care and designed to fit your business perfectly.”

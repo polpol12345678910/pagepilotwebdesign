@@ -1,39 +1,48 @@
-# PagePilot - Professional Website Building Service
+# PagePilot - Local Web Design Service
 
 ## Overview
 
-PagePilot is a professional website building service landing page built with vanilla HTML, CSS, and JavaScript. This is a static website designed to showcase web development services, featuring a modern design with smooth animations, responsive navigation, and clean aesthetics.
+PagePilot is a modern, green-themed website for a local web design service that helps small businesses get online. Built with vanilla HTML, CSS, and JavaScript, it features a clean design with soft textures, background shapes, icons, and subtle animations. The site emphasizes friendly, local service with honest messaging and transparent pricing.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preferences: Green color palette (greens, greys, white), clean modern layout with personality, soft textures and background shapes, hover effects and gentle animations, mobile-friendly design.
 
 ## System Architecture
 
 This is a client-side only static website with no backend services. The architecture follows a simple three-tier frontend structure:
 
-1. **Structure Layer (HTML)**: Semantic HTML5 markup for content organization
-2. **Presentation Layer (CSS)**: Modern CSS with custom properties for styling and responsive design
-3. **Behavior Layer (JavaScript)**: Vanilla JavaScript for interactive features
+1. **Structure Layer (HTML)**: Semantic HTML5 markup with single-page structure containing Home, About, Pricing, and Contact sections
+2. **Presentation Layer (CSS)**: Modern CSS with green color palette, background shapes, textures, and subtle animations
+3. **Behavior Layer (JavaScript)**: Vanilla JavaScript for interactive features and form handling
 
 ## Key Components
 
 ### Frontend Architecture
-- **Static HTML Landing Page**: Single-page application structure with multiple sections
-- **Modern CSS Framework**: Custom CSS using CSS custom properties (variables) for theming
-- **Vanilla JavaScript**: No frameworks - pure JavaScript for DOM manipulation and user interactions
+- **Single-Page Design**: Smooth-scrolling page with clearly separated sections instead of multi-page structure
+- **Green Theme CSS**: Custom CSS using CSS custom properties for green color palette (primary: #059669, accent: #10b981)
+- **Vanilla JavaScript**: Pure JavaScript for DOM manipulation, animations, and form interactions
 
 ### Design System
 - **Typography**: Inter font family from Google Fonts
-- **Icons**: Font Awesome 6.4.0 for consistent iconography
-- **Color Scheme**: Professional blue-based palette with CSS custom properties
+- **Icons**: Font Awesome 6.4.0 with plane departure icon for branding
+- **Color Scheme**: Green-themed palette (greens, greys, white) with CSS custom properties
+- **Visual Elements**: Background shapes, soft textures, hover effects, and gentle animations
 - **Responsive Design**: Mobile-first approach with hamburger navigation
+
+### Content Structure
+- **Hero Section**: "Websites that take off" tagline with handcrafted messaging
+- **About Section**: Personal story with founder quote and feature list
+- **Pricing Section**: Three-tier pricing (Basic £150, Standard £200, Premium £250)
+- **Contact Section**: Simplified form with Formspree integration support
 
 ### Interactive Features
 - **Mobile Navigation**: Hamburger menu with toggle functionality
 - **Smooth Scrolling**: Animated navigation between page sections
-- **Dynamic Navbar**: Background changes on scroll for better visual hierarchy
-- **Contact Form**: Basic form structure (submission handling appears incomplete)
+- **Dynamic Navbar**: Background changes on scroll
+- **Hover Effects**: Gentle animations on cards and buttons
+- **Contact Form**: Supports both local validation and external form services
 
 ## Data Flow
 

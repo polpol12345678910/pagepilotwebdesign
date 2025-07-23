@@ -47,54 +47,62 @@ window.addEventListener('scroll', function() {
 });
 
 // Contact Form Handling
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    
-    // Show loading state
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<span class="loading"></span> Sending...';
-    
-    // Get form data
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData);
-    
-    // Validate required fields
-    const requiredFields = ['name', 'email', 'message'];
-    const missingFields = requiredFields.filter(field => !data[field] || data[field].trim() === '');
-    
-    if (missingFields.length > 0) {
-        showFormMessage('Please fill in all required fields.', 'error');
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
-        return;
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            // Only prevent default if form action is not set to an external service
+            if (!this.action || this.action.includes('#') || this.action === window.location.href) {
+                e.preventDefault();
+                
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                
+                // Show loading state
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="loading"></span> Sending...';
+                
+                // Get form data
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+                
+                // Validate required fields
+                const requiredFields = ['name', 'email', 'message'];
+                const missingFields = requiredFields.filter(field => !data[field] || data[field].trim() === '');
+                
+                if (missingFields.length > 0) {
+                    showFormMessage('Please fill in all required fields.', 'error');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                    return;
+                }
+                
+                // Validate email format
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(data.email)) {
+                    showFormMessage('Please enter a valid email address.', 'error');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                    return;
+                }
+                
+                // Simulate form submission (replace with actual API call)
+                setTimeout(() => {
+                    console.log('Form submitted with data:', data);
+                    
+                    showFormMessage('Thank you! We\'ll get back to you within 24 hours.', 'success');
+                    
+                    // Reset form
+                    this.reset();
+                    
+                    // Reset button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                }, 2000);
+            }
+            // If using external form service like Formspree, let it handle naturally
+        });
     }
-    
-    // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(data.email)) {
-        showFormMessage('Please enter a valid email address.', 'error');
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
-        return;
-    }
-    
-    // Simulate form submission (replace with actual API call)
-    setTimeout(() => {
-        // Here you would typically send the data to your server
-        console.log('Form submitted with data:', data);
-        
-        showFormMessage('Thank you for your message! We\'ll get back to you within 24 hours.', 'success');
-        
-        // Reset form
-        this.reset();
-        
-        // Reset button
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
-    }, 2000);
 });
 
 // Show form messages
