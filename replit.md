@@ -13,14 +13,14 @@ Design preferences: Green color palette (greens, greys, white), clean modern lay
 
 This is a client-side only static website with no backend services. The architecture follows a simple three-tier frontend structure:
 
-1. **Structure Layer (HTML)**: Semantic HTML5 markup with single-page structure containing Home, About, Pricing, and Contact sections
+1. **Structure Layer (HTML)**: Semantic HTML5 markup with multi-page structure - separate pages for Home, About, Pricing, and Contact
 2. **Presentation Layer (CSS)**: Modern CSS with green color palette, background shapes, textures, and subtle animations
 3. **Behavior Layer (JavaScript)**: Vanilla JavaScript for interactive features and form handling
 
 ## Key Components
 
 ### Frontend Architecture
-- **Single-Page Design**: Smooth-scrolling page with clearly separated sections instead of multi-page structure
+- **Multi-Page Design**: Separate HTML files for Home (index.html), About (about.html), Pricing (pricing.html), and Contact (contact.html)
 - **Green Theme CSS**: Custom CSS using CSS custom properties for green color palette (primary: #059669, accent: #10b981)
 - **Vanilla JavaScript**: Pure JavaScript for DOM manipulation, animations, and form interactions
 
@@ -39,10 +39,18 @@ This is a client-side only static website with no backend services. The architec
 
 ### Interactive Features
 - **Mobile Navigation**: Hamburger menu with toggle functionality
-- **Smooth Scrolling**: Animated navigation between page sections
+- **Multi-Page Navigation**: Direct navigation between separate HTML pages
 - **Dynamic Navbar**: Background changes on scroll
 - **Hover Effects**: Gentle animations on cards and buttons
 - **Contact Form**: Supports both local validation and external form services
+
+### File Structure
+- **index.html**: Homepage with hero section and introductory content
+- **about.html**: About page with company story, founder quote, and feature list
+- **pricing.html**: Pricing page with three-tier package structure and detailed features
+- **contact.html**: Contact page with form and business contact information
+- **styles.css**: Shared CSS file with green theme and responsive design
+- **script.js**: JavaScript file for navigation, form handling, and interactions
 
 ## Data Flow
 

@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* Page Section Styles for Multi-page Layout */
+.page-section {
+    padding: 120px 0 80px;
+    min-height: calc(100vh - 80px);
+}
+
 html {
     scroll-behavior: smooth;
 }
