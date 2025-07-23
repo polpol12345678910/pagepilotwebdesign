@@ -997,6 +997,136 @@ body {
     box-shadow: var(--shadow-light);
 }
 
+/* Enhanced Contact Submit Button */
+.contact-submit {
+    position: relative;
+    padding: 1.5rem 2.5rem !important;
+    font-size: 1.1rem !important;
+    min-height: 80px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 25px rgba(5, 150, 105, 0.3) !important;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-submit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.contact-submit:hover::before {
+    left: 100%;
+}
+
+.contact-submit:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 35px rgba(5, 150, 105, 0.4) !important;
+}
+
+.contact-submit i {
+    font-size: 1.3rem;
+    animation: rocket-bounce 2s infinite;
+    flex-shrink: 0;
+}
+
+.button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+
+.button-main {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.button-subtitle {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    font-weight: 400;
+    line-height: 1;
+}
+
+@keyframes rocket-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
+/* Button Highlight Container */
+.button-highlight {
+    position: relative;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--light-green) 0%, var(--very-light-green) 100%);
+    border-radius: 16px;
+    border: 2px dashed var(--primary-color);
+    margin: 1.5rem 0;
+}
+
+.button-highlight::before {
+    content: '✨';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    animation: sparkle 2s infinite;
+}
+
+.contact-encouragement {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-encouragement p {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    animation: bounce-arrow 2s ease-in-out infinite;
+}
+
+.contact-encouragement i {
+    margin-right: 0.5rem;
+    animation: arrow-point 1.5s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(180deg); }
+}
+
+@keyframes bounce-arrow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+}
+
+@keyframes arrow-point {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -1186,6 +1316,34 @@ body {
         transform: translateY(-10px);
     }
 
+    /* Mobile Contact Button */
+    .contact-submit {
+        padding: 1.2rem 1.5rem !important;
+        min-height: 70px;
+        gap: 0.8rem;
+    }
+
+    .button-main {
+        font-size: 1rem !important;
+    }
+
+    .button-subtitle {
+        font-size: 0.8rem !important;
+    }
+
+    .contact-submit i {
+        font-size: 1.1rem;
+    }
+
+    .button-highlight {
+        padding: 0.8rem;
+        margin: 1rem 0;
+    }
+
+    .contact-encouragement p {
+        font-size: 0.9rem;
+    }
+
     .benefits-grid,
     .projects-grid {
         grid-template-columns: 1fr;
@@ -1266,4 +1424,23 @@ body {
 
 @keyframes spin {
     to { transform: rotate(360deg); }
+}
+.contact-btn {
+  font-size: 1.1rem;
+  padding: 0.9rem 1.5rem;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 119, 255, 0.3);
+}
+
+.contact-btn:hover {
+  background-color: #005dd1;
 }
