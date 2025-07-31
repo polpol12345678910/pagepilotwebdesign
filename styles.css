@@ -1274,11 +1274,11 @@ body {
 
     .hero-content {
         margin-top: 3rem;
-        order: 2;
+        order: 1;
     }
 
     .hero-visual {
-        order: 1;
+        order: 2;
         margin-bottom: 2rem;
     }
 
@@ -1288,7 +1288,7 @@ body {
     }
 
     .floating-elements {
-        display: none; /* Hide floating elements on mobile to prevent overlap */
+        display: block; /* Show floating elements again since positions are swapped */
     }
 
     .hero-title {
