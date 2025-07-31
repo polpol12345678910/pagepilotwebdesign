@@ -277,10 +277,6 @@ body {
     overflow: hidden;
 }
 
-.hero * {
-    transform: translateZ(0);
-}
-
 .hero-background {
     position: absolute;
     top: 0;
@@ -376,7 +372,6 @@ body {
     height: 100%;
     overflow: hidden;
     z-index: -1;
-    pointer-events: none;
 }
 
 .element {
@@ -390,7 +385,6 @@ body {
     justify-content: center;
     box-shadow: var(--shadow-medium);
     animation: float 6s ease-in-out infinite;
-    will-change: transform;
 }
 
 .element i {
@@ -417,8 +411,8 @@ body {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px) translateZ(0); }
-    50% { transform: translateY(-20px) translateZ(0); }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
 }
 
 /* Section Headers */
@@ -1369,11 +1363,11 @@ body {
 
     .hero-content {
         margin-top: 3rem;
-        order: 1;
+        order: 2;
     }
 
     .hero-visual {
-        order: 2;
+        order: 1;
         margin-bottom: 2rem;
     }
 
@@ -1383,7 +1377,7 @@ body {
     }
 
     .floating-elements {
-        display: none; /* Hide floating elements on mobile to prevent scroll issues */
+        display: block;
     }
 
     .hero-title {
