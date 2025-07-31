@@ -1369,6 +1369,8 @@ body {
     .hero-visual {
         order: 2;
         margin-bottom: 2rem;
+        position: relative;
+        z-index: 1;
     }
 
     .hero-image {
@@ -1377,7 +1379,7 @@ body {
     }
 
     .floating-elements {
-        display: block;
+        display: none;
     }
 
     .hero-title {
