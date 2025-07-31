@@ -351,7 +351,8 @@ body {
 .hero-visual {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 2rem;
 }
 
 .hero-image {
