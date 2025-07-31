@@ -311,17 +311,16 @@ body {
 }
 
 .hero-container {
-    width: 90%;
+    width: 60%;
     max-width: none;
     margin: 0 auto;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     position: relative;
     z-index: 1;
-    justify-self: center;
 }
 
 .hero-title {
@@ -351,10 +350,7 @@ body {
 }
 
 .hero-visual {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 2rem;
+    display: none;
 }
 
 .hero-image {
