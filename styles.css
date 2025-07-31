@@ -1355,9 +1355,10 @@ body {
     }
 
     .hero-container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        gap: 3rem;
+        gap: 2rem;
         padding-top: 1rem;
     }
 
@@ -1371,6 +1372,7 @@ body {
         margin-bottom: 2rem;
         position: relative;
         z-index: 1;
+        display: none; /* Hide the entire visual section on mobile */
     }
 
     .hero-image {
@@ -1380,6 +1382,17 @@ body {
 
     .floating-elements {
         display: none;
+    }
+
+    /* Add a simple icon replacement for mobile */
+    .hero-container::after {
+        content: '🚀';
+        font-size: 4rem;
+        display: block;
+        text-align: center;
+        margin: 2rem 0;
+        opacity: 0.6;
+        order: 3;
     }
 
     .hero-title {
