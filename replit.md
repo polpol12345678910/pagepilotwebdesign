@@ -1,8 +1,8 @@
-# PagePilot - Local Web Design Service
+# WalkerMade - Local Web Design Service
 
 ## Overview
 
-PagePilot is a modern, green-themed website for a local web design service that helps small businesses get online. Built with vanilla HTML, CSS, and JavaScript, it features a clean design with soft textures, background shapes, icons, and subtle animations. The site emphasizes friendly, local service with honest messaging and transparent pricing.
+WalkerMade is a modern, green-themed website for a local web design service that helps small businesses get online. Built with vanilla HTML, CSS, and JavaScript, it features a clean design with soft textures, background shapes, icons, and subtle animations. The site emphasizes friendly, local service with honest messaging and transparent pricing.
 
 ## User Preferences
 
@@ -26,16 +26,16 @@ This is a client-side only static website with no backend services. The architec
 
 ### Design System
 - **Typography**: Inter font family from Google Fonts
-- **Icons**: Font Awesome 6.4.0 with plane departure icon for branding
+- **Icons**: Font Awesome 6.4.0 with code icon for branding
 - **Color Scheme**: Green-themed palette (greens, greys, white) with CSS custom properties
 - **Visual Elements**: Background shapes, soft textures, hover effects, and gentle animations
 - **Responsive Design**: Mobile-first approach with hamburger navigation
 
 ### Content Structure
-- **Hero Section**: "Websites that take off" tagline with handcrafted messaging
+- **Hero Section**: "Professional websites made simple" tagline with crafted messaging
 - **About Section**: Personal story with founder quote and feature list
-- **Pricing Section**: Three-tier pricing (Basic £150, Standard £200, Premium £250)
-- **Contact Section**: Simplified form with Formspree integration support
+- **Pricing Section**: Four-tier pricing including Custom plan (Basic £200, Standard £450, Premium £700, Custom "Let's Talk")
+- **Contact Section**: Email contact at hello@walkermade.co.uk with Tally form integration
 
 ### Interactive Features
 - **Mobile Navigation**: Hamburger menu with toggle functionality
@@ -86,14 +86,21 @@ Since this is a static website, data flow is minimal:
 - Traditional web hosting
 - AWS S3 static hosting
 
+### Recent Changes (August 2025)
+- **Rebranding**: Changed from PagePilot to WalkerMade with walkermade.co.uk domain
+- **Messaging Update**: Removed aviation-themed content ("take off", plane icons) in favor of professional web design messaging
+- **Contact Integration**: Updated email to hello@walkermade.co.uk with Tally form popup
+- **Pricing Expansion**: Added fourth "Custom" pricing tier for bespoke projects
+- **Icon Update**: Changed from plane-departure to code icon throughout site
+
 ### Future Considerations
-- **Contact Form**: Will need backend service or third-party form handler (e.g., Formspree, Netlify Forms)
+- **Contact Form**: Currently uses Tally form integration for quote requests
 - **Performance**: Consider bundling and minification for production
-- **SEO**: Add meta tags, structured data, and sitemap
+- **SEO**: Meta tags updated, consider structured data and sitemap
 - **Analytics**: Integration with Google Analytics or similar tracking
 
 ### Development Notes
-- The contact form JavaScript appears incomplete in the provided files
 - All styling uses modern CSS features (custom properties, flexbox)
 - Mobile-responsive design implemented
 - Cross-browser compatibility considerations present
+- Brand consistency maintained across all four pages
