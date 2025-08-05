@@ -1432,8 +1432,8 @@ body {
         text-align: center;
         gap: 2rem;
         padding-top: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
         position: relative;
         overflow: hidden;
     }
@@ -1459,10 +1459,10 @@ body {
     .hero-content {
         margin-top: 1rem;
         order: 1;
-        width: 95%;
+        width: 100%;
         margin-left: auto !important;
         margin-right: auto !important;
-        padding: 0 0.5rem;
+        padding: 0 0.25rem;
         position: relative;
         box-sizing: border-box;
     }
