@@ -1459,10 +1459,10 @@ body {
     .hero-content {
         margin-top: 1rem;
         order: 1;
-        width: 85%;
+        width: 95%;
         margin-left: auto !important;
         margin-right: auto !important;
-        padding: 0;
+        padding: 0 0.5rem;
         position: relative;
         box-sizing: border-box;
     }
