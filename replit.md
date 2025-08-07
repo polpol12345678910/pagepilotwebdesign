@@ -90,7 +90,7 @@ Since this is a static website, data flow is minimal:
 - **Complete Rebranding**: Changed from PagePilot to WalkerMade with walkermade.co.uk domain
 - **SEO Optimization**: Updated all page titles to "WalkerMade | Web Design & Branding"
 - **Meta Tags**: Added consistent meta descriptions and Open Graph tags across all pages
-- **Hero Content**: Updated main heading to "Get Your Business Online with WalkerMade" with simplified, action-oriented messaging
+- **Hero Content**: Updated main heading to "WalkerMade | Websites Built for Results" with brand-focused messaging
 - **Messaging Update**: Removed aviation-themed content ("take off", plane icons) in favor of professional web design messaging
 - **Contact Integration**: Updated email to hello@walkermade.co.uk with Tally form popup
 - **Pricing Expansion**: Added fourth "Custom" pricing tier for bespoke projects
