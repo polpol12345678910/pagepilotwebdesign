@@ -94,7 +94,7 @@ Since this is a static website, data flow is minimal:
 - **Messaging Update**: Removed aviation-themed content ("take off", plane icons) in favor of professional web design messaging
 - **Contact Integration**: Updated email to hello@walkermade.co.uk with Tally form popup
 - **Pricing Expansion**: Added fourth "Custom" pricing tier for bespoke projects
-- **Icon Update**: Changed from plane-departure to palette icon throughout site for more visual appeal
+- **Icon Update**: Changed from plane-departure to palette, then to laptop-code icon throughout site for better web design representation
 - **Mobile Optimization**: Fixed text width issues on mobile devices for better readability
 
 ### Future Considerations
