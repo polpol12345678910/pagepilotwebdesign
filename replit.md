@@ -87,11 +87,15 @@ Since this is a static website, data flow is minimal:
 - AWS S3 static hosting
 
 ### Recent Changes (August 2025)
-- **Rebranding**: Changed from PagePilot to WalkerMade with walkermade.co.uk domain
+- **Complete Rebranding**: Changed from PagePilot to WalkerMade with walkermade.co.uk domain
+- **SEO Optimization**: Updated all page titles to "WalkerMade | Web Design & Branding"
+- **Meta Tags**: Added consistent meta descriptions and Open Graph tags across all pages
+- **Hero Content**: Updated main heading to "Web Design for Small Businesses, Built in the UK"
 - **Messaging Update**: Removed aviation-themed content ("take off", plane icons) in favor of professional web design messaging
 - **Contact Integration**: Updated email to hello@walkermade.co.uk with Tally form popup
 - **Pricing Expansion**: Added fourth "Custom" pricing tier for bespoke projects
 - **Icon Update**: Changed from plane-departure to code icon throughout site
+- **Mobile Optimization**: Fixed text width issues on mobile devices for better readability
 
 ### Future Considerations
 - **Contact Form**: Currently uses Tally form integration for quote requests
