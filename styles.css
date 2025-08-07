@@ -344,6 +344,11 @@ body {
     position: relative;
 }
 
+.brand-highlight {
+    color: var(--blue-primary);
+    font-weight: 900;
+}
+
 .hero-description {
     font-size: 1.25rem;
     color: var(--text-medium);
