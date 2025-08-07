@@ -26,7 +26,7 @@ This is a client-side only static website with no backend services. The architec
 
 ### Design System
 - **Typography**: Inter font family from Google Fonts
-- **Icons**: Font Awesome 6.4.0 with code icon for branding
+- **Icons**: Font Awesome 6.4.0 with palette icon for branding
 - **Color Scheme**: Green-themed palette (greens, greys, white) with CSS custom properties
 - **Visual Elements**: Background shapes, soft textures, hover effects, and gentle animations
 - **Responsive Design**: Mobile-first approach with hamburger navigation
@@ -94,7 +94,7 @@ Since this is a static website, data flow is minimal:
 - **Messaging Update**: Removed aviation-themed content ("take off", plane icons) in favor of professional web design messaging
 - **Contact Integration**: Updated email to hello@walkermade.co.uk with Tally form popup
 - **Pricing Expansion**: Added fourth "Custom" pricing tier for bespoke projects
-- **Icon Update**: Changed from plane-departure to code icon throughout site
+- **Icon Update**: Changed from plane-departure to palette icon throughout site for more visual appeal
 - **Mobile Optimization**: Fixed text width issues on mobile devices for better readability
 
 ### Future Considerations
